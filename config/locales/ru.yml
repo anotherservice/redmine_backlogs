@@ -73,6 +73,7 @@ ru:
   field_assigned_to: Assigned To
   field_backlogs_issue_type: Тип бэклога
   field_blocks: Блокировки
+  field_feature: Feature
   field_initial_story_points: Начальная оценка истории
   field_name: Название
   field_number_of_snapshots: Сохранённые снимки оценки

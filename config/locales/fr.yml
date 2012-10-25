@@ -76,6 +76,7 @@ fr:
     QXNzaWduw6kgw6A=
   field_backlogs_issue_type: Type de backlog
   field_blocks: Blocks
+  field_feature: Feature
   field_initial_story_points: Point de story initiale
   field_name: Nom
   field_number_of_snapshots: Sauvegarder l'instantané des points

@@ -1,5 +1,5 @@
---- 
-en: 
+---
+en:
   backlogs_active: active
   backlogs_any: any
   backlogs_card_specification: Label types for card printing
@@ -55,6 +55,7 @@ en:
   event_sprint_summary: "%{project}: %{summary}"
   field_backlogs_issue_type: Backlog type
   field_blocks: Blocks
+  field_feature: Feature
   field_initial_story_points: Initial story points
   field_name: Name
   field_number_of_snapshots: Saved point snapshots
@@ -124,7 +125,7 @@ en:
 
   # Version fields
   field_name: "Name"
-  
+
   # Error messages
   error_blank: "cannot be blank"
   error_greater_than_start_date: "cannot be earlier than Start Date"
@@ -175,10 +176,10 @@ en:
   use_free_text_if_empty: Use text field instead of dropdown if empty
   warning_reset_sprint: |
     YOU ARE ABOUT TO RESET THIS SPRINT!
-    
+
     Are you sure you want to do this? Resetting the sprint
     will have the following effects on stories and tasks:
-    
+
     * Creation date will be set to the sprint start date
     * ALL modifications to the stories and tasks except notes
        will be DELETED

@@ -69,6 +69,7 @@
   field_assigned_to: Assigned To
   field_backlogs_issue_type: Backlog type
   field_blocks: Blokker
+  field_feature: Feature
   field_initial_story_points: Initielle storypoenger
   field_name: Navn
   field_number_of_snapshots: Antall lagrede poengsnapshots
