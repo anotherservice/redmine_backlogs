@@ -70,6 +70,7 @@ es:
   field_assigned_to: Asignado a
   field_backlogs_issue_type: Tipo de backlog
   field_blocks: Bloques
+  field_feature: Feature
   field_initial_story_points: Puntos iniciales de la historia
   field_name: Nombre
   field_number_of_snapshots: Puntos ahorrados en la instantanea

@@ -70,6 +70,7 @@ zh:
   field_assigned_to: Assigned To
   field_backlogs_issue_type: Backlog类型
   field_blocks: ! '[[Blocks]]'
+  field_feature: Feature
   field_initial_story_points: Initial story points
   field_name: ! '[[Name]]'
   field_number_of_snapshots: Saved point snapshots

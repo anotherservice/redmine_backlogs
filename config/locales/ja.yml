@@ -1,5 +1,5 @@
 ---
-ja: 
+ja:
   project_module_backlogs: バックログ
   backlogs_active: active
   backlogs_any: any
@@ -55,6 +55,7 @@ ja:
   event_sprint_summary: "%{project}: %{summary}"
   field_backlogs_issue_type: バックログタイプ
   field_blocks: ブロック
+  field_feature: Feature
   field_initial_story_points: 初期ストーリーポイント
   field_name: 名前
   field_number_of_snapshots: ポイントをスナップショットとして保存
@@ -108,7 +109,7 @@ ja:
 
   # Version fields
   field_name: "名前"
-  
+
   # Error messages
   error_blank: "ブランクにできません"
   error_greater_than_start_date: "開始日より前にできません"
@@ -189,10 +190,10 @@ ja:
   use_free_text_if_empty: "もし空なら、ドロップダウンの代わりにテキストフィールドとして利用してください"
   warning_reset_sprint: |
     このスプリントをリセットする際の注意！！
-    
+
     本当にスプリントをリセットしますか? スプリントのリセットは
     ストーリーとタスクに次の影響があります:
-    
+
     * 作成日はスプリントの開始日に設定されます
     * コメントを除いた全てのストーリーとタスクの変更は削除されます
     * 現在の値は、全てのストーリーとタスクの初期値になります
