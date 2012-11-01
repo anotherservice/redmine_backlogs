@@ -82,6 +82,7 @@ de:
   field_release_end_date: Release Enddatum
   field_release_start_date: Release Startdatum
   field_remaining_hours: Restaufwand (Stunden)
+  field_remaining_time: Restaufwand
   field_story_points: Storypunkte
   field_subject: Thema
   field_time_entry_comments: Zeiterfassung Kommentar
@@ -104,6 +105,7 @@ de:
   label_hide_completed_sprints: Verstecke abgeschlossene Sprints
   label_hours: Stunden
   label_hours_remaining: restliche Stunden
+  label_time_remaining: restliche Zeit
   label_hours_required_burn_rate: Notwendiger Durchsatz (Stunden)
   label_ideal: ideal
   label_impediments: Hindernisse
@@ -162,8 +164,10 @@ de:
   remaining_story_points: Verbleibende Storypunkte
   story_description: Beschreibung
   story_estimation_hours: Schätzung (Stunden)
+  story_estimation_time: Schätzung
   story_points: Punkte
   story_remaining_hours: Restzeit (Stunden)
+  story_remaining_time: Restzeit
   story_spent_time: Investierte Zeit
   story_status: Status
   today_not_in_release_msg: Heutiges Datum liegt nicht im Release-Zeitraum. Snapshot

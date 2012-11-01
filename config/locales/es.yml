@@ -79,6 +79,7 @@ es:
   field_release_end_date: Fecha final del release
   field_release_start_date: Fecha inicial del release
   field_remaining_hours: Restante (horas)
+  field_remaining_time: Restante
   field_story_points: Puntos de historia
   field_subject: Tema
   field_time_entry_comments: Time Entry Comments
@@ -100,6 +101,7 @@ es:
   label_download_sprint: Descargar
   label_hide_completed_sprints: Ocultar Sprints completados
   label_hours_remaining: horas faltantes
+  label_time_remaining: tiempo faltantes
   label_hours_required_burn_rate: es necesario el burn rate (horas)
   label_hours: horas
   label_ideal: ideal
@@ -161,8 +163,10 @@ es:
   remaining_story_points: Puntos de historia pendientes
   story_description: Descripción
   story_estimation_hours: Estimación (horas)
+  story_estimation_time: Estimación
   story_points: Puntos
   story_remaining_hours: Faltante (horas)
+  story_remaining_time: Faltante
   story_spent_time: Tiempo gastado
   story_status: Estado
   today_not_in_release_msg: Fecha actual no está dentro del rango del release. Realmente

@@ -80,7 +80,7 @@ module BacklogsPlugin
           end
 
           if issue.is_task? && User.current.allowed_to?(:update_remaining_hours, project) != nil
-            snippet += "<tr><th>#{l(:field_remaining_hours)}</th><td>#{issue.remaining_hours}</td></tr>"
+            snippet += "<tr><th>#{l(:field_remaining_time)}</th><td>#{issue.remaining_time} #{issue.default_unit_time}</td></tr>"
           end
 
           return snippet
@@ -139,9 +139,9 @@ module BacklogsPlugin
           end
 
           if issue.is_task? && !issue.new_record?
-            snippet += "<p><label for='remaining_hours'>#{l(:field_remaining_hours)}</label>"
-            snippet += text_field_tag('remaining_hours', issue.remaining_hours, :size => 3)
-            snippet += '</p>'
+            snippet += "<p><label for='remaining_hours'>#{l(:field_remaining_time)}</label>"
+            snippet += text_field_tag('remaining_time', issue.remaining_time, :size => 3)
+            snippet += " #{issue.default_unit_time} </p>"
           end
 
           return snippet

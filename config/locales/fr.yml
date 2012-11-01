@@ -85,6 +85,7 @@ fr:
   field_release_end_date: Date de fin de la release
   field_release_start_date: Date de début de la release
   field_remaining_hours: Restant à faire (heures)
+  field_remaining_time: Restant à faire
   field_story_points: Points de user stories
   field_subject: Sujet
   field_time_entry_comments: Commentaire sur les heures saisies
@@ -107,6 +108,7 @@ fr:
     VMOpbMOpY2hhcmdlcg==
   label_hide_completed_sprints: Cacher Sprints complétés
   label_hours_remaining: Heures restantes
+  label_time_remaining: Temps restant
   label_hours_required_burn_rate: Taux de consommation requis (heures)
   label_hours: heures
   label_ideal: idéale
@@ -166,8 +168,10 @@ fr:
   remaining_story_points: remaining story points
   story_description: Description
   story_estimation_hours: Estimation (heures)
+  story_estimation_time: Estimation
   story_points: Points
   story_remaining_hours: Restant à faire (heures)
+  story_remaining_time: Restant à faire
   story_spent_time: Temps passé
   story_status: Statut
   today_not_in_release_msg: La date actuelle n'est pas dans l'intervalle des dates

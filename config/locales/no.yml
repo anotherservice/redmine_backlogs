@@ -77,7 +77,8 @@
   field_priority: Priority
   field_release_end_date: Utgivelse sluttdato
   field_release_start_date: Utgivelse startdato
-  field_remaining_hours: Remaining (hours)
+  field_remaining_hours: Gjenværende (timer)
+  field_remaining_time: Gjenværende
   field_story_points: Storypoeng
   field_subject: Emne
   field_time_entry_comments: Time Entry Comments
@@ -98,6 +99,7 @@
   label_download_sprint: Download
   label_hide_completed_sprints: Hide Completed Sprints
   label_hours_remaining: gjenværende timer
+  label_time_remaining: gjenværende tid
   label_hours_required_burn_rate: påkrevet burn rate (timer)
   label_hours: timer
   label_ideal: ideal
@@ -158,8 +160,10 @@
   remaining_story_points: gjenværende storypoeng
   story_description: Beskrivelse
   story_estimation_hours: Estimert (timer)
+  story_estimation_time: Estimert
   story_points: Poeng
   story_remaining_hours: Gjenværene (timer)
+  story_remaining_time: Gjenværene
   story_spent_time: Brukt tid
   story_status: Status
   today_not_in_release_msg: Gjeldende dato er ikke innenfor tidsperioden for utgivelsen.
