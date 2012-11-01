@@ -82,6 +82,7 @@ ru:
   field_release_end_date: Дата окончания версии
   field_release_start_date: Дата начала версии
   field_remaining_hours: Remaining (hours)
+  field_remaining_time: Remaining
   field_story_points: Оценка истории (человеко-часы)
   field_subject: Содержание
   field_time_entry_comments: Time Entry Comments
@@ -104,6 +105,7 @@ ru:
   label_hide_completed_sprints: Hide Completed Sprints
   label_hours: часы
   label_hours_remaining: remaining hours
+  label_time_remaining: remaining time
   label_hours_required_burn_rate: required burn rate (hours)
   label_ideal: ideal
   label_impediments: Задержки
@@ -162,8 +164,10 @@ ru:
   remaining_story_points: Оставшиеся оценки истории
   story_description: Description
   story_estimation_hours: Estimation (hours)
+  story_estimation_time: Estimation
   story_points: Points
   story_remaining_hours: Remaining (hours)
+  story_remaining_time: Remaining
   story_spent_time: Spent Time
   story_status: Status
   today_not_in_release_msg: Текущая дата не находится в пределах дат версии. Вы действительно

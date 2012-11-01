@@ -81,6 +81,7 @@ nl:
   field_release_end_date: Eind datum van de release
   field_release_start_date: Start datum release
   field_remaining_hours: Resterend (uren)
+  field_remaining_time: Resterend
   field_story_points: Story points
   field_subject: Onderwerp
   field_time_entry_comments: Tijd registratie commentaar
@@ -102,6 +103,7 @@ nl:
   label_download_sprint: Download
   label_hide_completed_sprints: Verberg gecompleteerde sprints
   label_hours_remaining: resterende uren
+  label_time_remaining: resterende tijd
   label_hours_required_burn_rate: benodigde burn rate (uren)
   label_hours: uren
   label_ideal: ideaal
@@ -161,8 +163,10 @@ nl:
   remaining_story_points: resterende story points
   story_description: Omschrijving
   story_estimation_hours: Schatting (uren)
+  story_estimation_time: Schatting
   story_points: Points
   story_remaining_hours: Resterend (uren)
+  story_remaining_time: Resterend
   story_spent_time: Tijd besteed
   story_status: Status
   today_not_in_release_msg: Huidige datum valt niet binnen de release.  Wilt u echt
