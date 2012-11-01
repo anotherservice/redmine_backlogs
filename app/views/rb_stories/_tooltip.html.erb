@@ -5,6 +5,6 @@
 <b><%= I18n.t :field_category %> </b>: <%=h tooltip.category %><br />
 <b><%= I18n.t :story_points %></b>: <%=h story_points_or_empty(tooltip) %><br />
 <b><%= I18n.t :story_estimation_time %></b>: <%=h tooltip.estimated_time %><br />
-<b><%= I18n.t :story_spent_time %></b>: <%= tooltip.spent_time %><br />
+<b><%= I18n.t :story_spent_time %></b>: <%= tooltip.total_spent_time %><br />
 <b><%= I18n.t :story_remaining_time %></b>: <%=h tooltip.remaining_time %>
 <p><b><%= I18n.t :story_description %></b><br /><%= tidy(textile_to_html(tooltip.description)) %></p>
