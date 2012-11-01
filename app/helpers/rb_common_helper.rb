@@ -128,6 +128,10 @@ filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,Start
     item.remaining_hours.blank? || item.remaining_hours==0 ? "" : item.remaining_hours
   end
 
+  def remaining_time(item)
+    item.remaining_time.blank? || item.remaining_time==0 ? "" : item.remaining_time
+  end
+
   def workdays(start_day, end_day)
     return (start_day .. end_day).select {|d| (d.wday > 0 and d.wday < 6) }
   end
