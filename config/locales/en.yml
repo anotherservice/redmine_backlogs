@@ -70,6 +70,7 @@ en:
   field_priority: Priority
   field_remaining_hours: Remaining (hours)
   field_remaining_time: Remaining
+  field_time_entry: Time Entry
   field_time_entry_hours: Time Entry Hours
   field_time_entry_user_id: Time Entry User Id
   field_time_entry_spend_on: Time Entry Spend on

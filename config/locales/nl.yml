@@ -84,6 +84,7 @@ nl:
   field_remaining_time: Resterend
   field_story_points: Story points
   field_subject: Onderwerp
+  field_time_entry: Tijd registratie
   field_time_entry_comments: Tijd registratie commentaar
   field_time_entry_hours: Tijd registratie uren
   field_time_entry_spend_on: Tijd registratie spendeer aan

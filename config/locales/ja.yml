@@ -70,6 +70,7 @@ ja:
   field_priority: 優先度
   field_remaining_hours: 残り時間
   field_remaining_time: Remaining
+  field_time_entry: Time Entry
   field_time_entry_hours: 作業時間
   field_time_entry_user_id: 作業者のユーザID
   field_time_entry_spend_on: 作業内容
