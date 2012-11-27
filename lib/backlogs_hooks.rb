@@ -140,7 +140,7 @@ module BacklogsPlugin
 
           if issue.is_task? && !issue.new_record?
             snippet += "<p><label for='remaining_hours'>#{l(:field_remaining_time)}</label>"
-            snippet += text_field_tag('remaining_time', issue.remaining_time, :size => 3)
+            snippet += text_field_tag('remaining_hours', issue.remaining_time, :size => 3)
             snippet += " #{issue.default_unit_time} </p>"
           end
 
@@ -283,9 +283,9 @@ module BacklogsPlugin
         begin
           if issue.is_task? && User.current.allowed_to?(:update_remaining_hours, time_entry.project) != nil
             remaining_hours = issue.remaining_hours
-            snippet += "<p><label for='remaining_hours'>#{l(:field_remaining_hours)}</label>"
-            snippet += text_field_tag('remaining_hours', remaining_hours, :size => 6)
-            snippet += '</p>'
+            snippet += "<p><label for='remaining_hours'>#{l(:field_remaining_time)}</label>"
+            snippet += text_field_tag('remaining_hours', RedmineAdvancedIssues::TimeManagement.calculate(remaining_hours, Setting.plugin_redmine_advanced_issues['default_unit']), :size => 6)
+            snippet += " #{issue.default_unit_time} </p>"
           end
           return snippet
         rescue => e
