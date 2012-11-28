@@ -85,9 +85,10 @@ fr:
   field_release_end_date: Date de fin de la release
   field_release_start_date: Date de début de la release
   field_remaining_hours: Restant à faire (heures)
-  field_remaining_time: Restant à faire
+  field_remaining_time: Temps restant
   field_story_points: Points de user stories
   field_subject: Sujet
+  field_time_entry: Temps passé
   field_time_entry_comments: Commentaire sur les heures saisies
   field_time_entry_hours: Heures saisies en heures
   field_time_entry_spend_on: Entrée temps passé sur
