@@ -80,7 +80,7 @@ module BacklogsPlugin
           end
 
           if issue.is_task? && User.current.allowed_to?(:update_remaining_hours, project) != nil
-            snippet += "<tr><th>#{l(:field_remaining_time)}</th><td>#{issue.remaining_time} #{issue.default_unit_time}</td></tr>"
+            snippet += "<tr><th>#{l(:field_remaining_time)}</th><td>" + RedmineAdvancedIssues::TimeManagement.calculate(issue.remaining_hours, Setting.plugin_redmine_advanced_issues['default_unit']) + " #{issue.default_unit_time}</td></tr>"
           end
 
           return snippet
@@ -140,7 +140,7 @@ module BacklogsPlugin
 
           if issue.is_task? && !issue.new_record?
             snippet += "<p><label for='remaining_hours'>#{l(:field_remaining_time)}</label>"
-            snippet += text_field_tag('remaining_hours', issue.remaining_time, :size => 3)
+            snippet += text_field_tag('remaining_hours', RedmineAdvancedIssues::TimeManagement.calculate(issue.remaining_hours, Setting.plugin_redmine_advanced_issues['default_unit']), :size => 3)
             snippet += " #{issue.default_unit_time} </p>"
           end
 
@@ -252,7 +252,19 @@ module BacklogsPlugin
 
         if issue.is_task?
           begin
-            issue.remaining_hours = Float(params[:remaining_hours])
+            value = params[:remaining_hours]
+            time_unit = ""
+
+            if value.to_s =~ /^([0-9]+)\s*[a-z]{1}$/
+              time_unit = RedmineAdvancedIssues::TimeManagement.getUnitTimeFromChar value.to_s[-1, 1]
+            end
+
+            if !time_unit.empty?
+              issue.remaining_hours = RedmineAdvancedIssues::TimeManagement.calculateHours(value,time_unit)
+            else
+              issue.remaining_hours = RedmineAdvancedIssues::TimeManagement.calculateHours(value,Setting.plugin_redmine_advanced_issues['default_unit'])
+            end #if
+
           rescue ArgumentError, TypeError
             issue.remaining_hours = nil
           end
