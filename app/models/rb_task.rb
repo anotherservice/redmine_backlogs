@@ -93,9 +93,21 @@ class RbTask < Issue
       move_before params[:next] unless is_impediment # impediments are not hosted under a single parent, so you can't tree-order them
       update_blocked_list params[:blocks].split(/\D+/) if params[:blocks]
 
-      if params.has_key?(:remaining_hours)
+      if params.has_key?(:remaining_time)
         begin
-          self.remaining_hours = Float(params[:remaining_hours].to_s.gsub(',', '.'))
+          value = params[:remaining_time].to_s.gsub(',', '.')
+          time_unit = ""
+
+          if value.to_s =~ /^([0-9]+)\s*[a-z]{1}$/
+            time_unit = RedmineAdvancedIssues::TimeManagement.getUnitTimeFromChar value.to_s[-1, 1]
+          end
+
+          if !time_unit.empty?
+            self.remaining_hours = RedmineAdvancedIssues::TimeManagement.calculateHours(value,time_unit)
+          else
+            self.remaining_hours = RedmineAdvancedIssues::TimeManagement.calculateHours(value,Setting.plugin_redmine_advanced_issues['default_unit'])
+          end #if
+
         rescue ArgumentError, TypeError
           Rails.logger.warn "#{params[:remaining_hours]} is wrong format for remaining hours."
         end
