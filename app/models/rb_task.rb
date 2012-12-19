@@ -31,6 +31,23 @@ class RbTask < Issue
     attribs['tracker_id'] = RbTask.tracker
     attribs['project_id'] = project_id
 
+    if params.has_key?(:remaining_time)
+      # remaining time with default time_unit from redmine_advanced_issues
+      value = params[:remaining_time].to_s.gsub(',', '.')
+      time_unit = ""
+
+      if value.to_s =~ /^([0-9]+)\s*[a-z]{1}$/
+        time_unit = RedmineAdvancedIssues::TimeManagement.getUnitTimeFromChar value.to_s[-1, 1]
+      end
+
+      if !time_unit.empty?
+        attribs['remaining_hours'] = RedmineAdvancedIssues::TimeManagement.calculateHours(value,time_unit)
+      else
+        attribs['remaining_hours'] = RedmineAdvancedIssues::TimeManagement.calculateHours(value,Setting.plugin_redmine_advanced_issues['default_unit'])
+      end #if
+
+    end
+
     blocks = params.delete('blocks')
 
     task = new(attribs)
